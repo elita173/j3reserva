@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-configuracion del componente ver jform los distintos parametros que puede tener
+Configuración del componente
+Esto es lo que se ve cuando se presiona el botón "Options"
 -->
 <config>
-<fieldset name="component"
-label="COM_RESERVA_COMPONENT_LABEL"
-description="COM_RESERVA_COMPONENT_DESC"
->
+	<fieldset name="component"
+		label="COM_RESERVA_COMPONENT_LABEL"
+		description="COM_RESERVA_COMPONENT_DESC">
+	</fieldset>
     
-    <!--
+<!--
 configuracion del componente ver jform
 hora de promocion: 4hs
 valor hora extra:$40
@@ -17,21 +18,18 @@ items necesario para descuento:2
 usuario mercado pago:
 contraseña:
 -->
-</fieldset>
-<!--conjunto Permisos muestra los permisos definidos en access.xml -->
+<!--conjunto Permisos: muestra los permisos definidos en access.xml -->
 
     <fieldset 
         name="permissions"
         description="JCONFIG_PERMISSIONS_DESC"
-        label="JCONFIG_PERMISSIONS_LABEL" 
-    >
+        label="JCONFIG_PERMISSIONS_LABEL" >
         <field 
             name="rules" type="rules"
             component="com_reserva"
             filter="rules"
             validate="rules"
             label="JCONFIG_PERMISSIONS_LABEL"
-            section="component"
-        />
+            section="component" />
     </fieldset>
 </config>

@@ -1,9 +1,12 @@
 <?php
+/*
+ * El formulario que se usa al crear un nuevo registro o al editar uno existente
+ */
 defined('_JEXEC') or die;
 class ReservaViewEvento extends JViewLegacy
 {
-protected $item;
-protected $form;
+    protected $item;
+    protected $form;
 
     public function display($tpl = null)
     {
@@ -17,7 +20,7 @@ protected $form;
         $this->addToolbar();
         parent::display($tpl);
     }
-    
+
     protected function addToolbar()
     {
         JFactory::getApplication()->input->set('hidemainmenu', true);
@@ -33,3 +36,4 @@ protected $form;
         }
     }
 }
+?>

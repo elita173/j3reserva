@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="text" default="0" 
+                   label="JGLOBAL_FIELD_ID_LABEL" readonly="true" 
+                   class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="nombre" type="text" class="inputbox" 
+                   size="40" label="COM_RESERVA_FIELD_NOMBRE_LABEL" 
+                   description="COM_RESERVA_FIELD_NOMBRE_DESC" required="true" />
+
+        <field name="img" type="media" directory="/images" 
+                   hide_none="1" label="COM_RESERVA_FIELD_IMAGEN_LABEL"
+                   size="40" description="COM_RESERVA_FIELD_IMAGEN_DESC" />
+
+        <field name="descripcion" type="text" class="inputbox" 
+                   size="40" label="COM_RESERVA_DESCRIPCION_LABEL" 
+                   description="COM_RESERVA_FIELD_DESCRIPCION_DESC" />
+
+        <field name="costo" type="text" class="inputbox" 
+                   size="40" label="COM_RESERVA_COSTO_LABEL" 
+                   description="COM_RESERVA_FIELD_COSTO_DESC" />
+    </fieldset>
+</form>

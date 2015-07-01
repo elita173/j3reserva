@@ -1,78 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
-<name>com_reserva</name>
-<author>Rigonatto Sebastian</author>
-<author>Arriata Elisabet</author>
-<creationDate>Septiembre 2014</creationDate>
-<license>GNU General Public License version 2 or later; see
-LICENSE.txt</license>
-<authorEmail>sebastianrigonatto@gmail.com</authorEmail>
-<authorEmail>elisabet.arratia@gmail.com</authorEmail>
-<authorUrl>saltitosmagicos.com.ar</authorUrl>
-<version>1.0.0</version>
-<description>COM_RESERVA_XML_DESCRIPTION</description>
+    <name>com_reserva</name>
+    <author>Arratia Elisabet - Rigonatto Sebastian</author>
+    <creationDate>Junio 2015</creationDate>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>sebastianrigonatto@gmail.com</authorEmail>
+    <authorEmail>elisabet.arratia@gmail.com</authorEmail>
+    <authorUrl>saltitosmagicos.com.ar</authorUrl>
+    <version>1.8.1</version>
+    <description>COM_RESERVA_XML_DESCRIPTION</description>
+    <scriptfile>script.php</scriptfile>
 
-<scriptfile>script.php</scriptfile>
-
-<install>
-<sql>
-    <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
-</sql>
-</install>
-<uninstall>
-<sql>
-    <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
-</sql>
-</uninstall>
-<files folder="site">
-<filename>index.html</filename>
-</files>
-<administration>
-<menu img="class:categories">COM_RESERVA_MENU</menu>
-<submenu>
-		<menu link="option=com_reserva"
-		view="reservas" img="class:generic"
-		alt="Reserva/Reservas">com_reserva_reservas</menu> 
-		<menu 
-			link="option=com_reserva&amp;view=semanal"
-			view="semanal" img="class:categories"
-			alt="Reserva/Semanal">com_reserva_semanal
-		</menu>
-		<menu 
-			link="option=com_reserva&amp;view=diaria"
-			img="class:generic"
-			alt="Reserva/Diaria">com_reserva_diaria
-		</menu>
-                
-                <menu 
-			link="option=com_reserva&amp;view=estadistica"
-			img="class:generic"
-			alt="Reserva/Estadistica">com_reserva_estadistica
-		</menu>
-                <menu 
-			link="option=com_reserva&amp;view=eventos"
-			img="class:generic"
-			alt="Reserva/Eventos">com_reserva_eventos
-		</menu>
-	</submenu>
-<files folder="admin">
-
-    <filename>index.html</filename>
-    <filename>access.xml</filename>
-    <filename>config.xml</filename>
-    <filename>controller.php</filename>
-    <filename>reserva.php</filename>
-
-    <folder>controllers</folder>
-    <folder>helpers</folder>
-    <folder>models</folder>
-    <folder>sql</folder>
-    <folder>tables</folder>
-    <folder>views</folder>
-</files>
-<languages folder="admin">
-    <language tag="en-GB">language/es-ES/es-ES.com_reserva.ini</language>
-    <language tag="en-GB">language/es-ES/es-ES.com_reserva.sys.ini</language>
-</languages>
-</administration>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>reserva.php</filename>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+    <administration>
+        <menu img="class:categories">COM_RESERVA_MENU</menu>
+        <submenu>
+            <menu link="option=com_reserva"
+            view="reservas" img="class:generic"
+            alt="Reserva/Calendario">COM_RESERVA_RESERVAS
+            </menu> 
+            <menu 
+                link="option=com_reserva&amp;view=items"
+                img="class:generic"
+                alt="Reserva/Items">COM_RESERVA_ITEMS
+            </menu>
+            <menu 
+                link="option=com_reserva&amp;view=eventos"
+                img="class:generic"
+                alt="Reserva/Reserva">COM_RESERVA_EVENTOS
+            </menu>
+        </submenu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>reserva.php</filename>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="es-ES">language/es-ES/es-ES.com_reserva.ini</language>
+            <language tag="es-ES">language/es-ES/es-ES.com_reserva.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_reserva.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_reserva.sys.ini</language>
+        </languages>
+    </administration>
 </extension>
