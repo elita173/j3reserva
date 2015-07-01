@@ -17,11 +17,11 @@
 			size="50" label="COM_RESERVA_FIELD_LUGAR_LABEL" 
 			description="COM_RESERVA_FIELD_LUGAR_DESC" required="true" />
                 
-		<field name="inicio" type="DateTime"  class="inputbox"
+		<field name="inicio" type="DateTime"  class="inputbox" required="true"
 			label="COM_RESERVA_FIELD_INICIO_LABEL" description="COM_RESERVA_FIELD_INICIO_DESC"
 			size="22" format="%Y-%m-%d" filter="user_utc" />
 			
-		<field name="fin" type="DateTime"  class="inputbox"
+		<field name="fin" type="DateTime"  class="inputbox" required="true"
 			label="COM_RESERVA_FIELD_FIN_LABEL" description="COM_RESERVA_FIELD_FIN_DESC"
 			size="22" format="%Y-%m-%d" filter="user_utc" />
 
